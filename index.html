@@ -1,23 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
-  <title>Random List</title>
-</head>
-<body>
-  <div class="container z-depth-2">
-    <ul class="collection with-header">
-      <li class="collection-header center"><h4>Random List</h4></li>
-      <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content red-text"><i class="material-icons">clear</i></a></div></li>
-      <li class="collection-item"><div class="valign-wrapper"><i class="material-icons">add</i> Add item<a href="#!" class="secondary-content"></a></div></li>
-    </ul>
-  </div>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
-  <script src="./app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Random List</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="title" contenteditable="true">Title...</h1>
+    </header>
+    <form>
+      <input type="text" placeholder="List item" class="todo-input" />
+      <button class="todo-button" type="submit">
+        <span class="material-icons">add</span>
+      </button>
+      <div class="select">
+          <select name="todos" class="filter-todo">
+              <option value="all">All</option>
+              <option value="completed">Completed</option>
+              <option value="uncompleted">Uncompleted</option>
+          </select>
+      </div>
+    </form>
+    <div class="todo-container">
+      <ul class="todo-list"></ul>
+    </div>
+    <script src="./app.js"></script>
+  </body>
 </html>

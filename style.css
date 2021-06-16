@@ -6,4 +6,18 @@
 
 body {
   background: #333;
+  color: #fff;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+header,
+form,
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo {
+  display: flex;
 }
